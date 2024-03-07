@@ -29,7 +29,7 @@ const Pad = ({ srcAudio, text, id, setClickedId }) => {
 
     >
       <p>{text}</p>
-      <audio className="clip" id={text}>
+      <audio src={srcAudio} className="clip" id={text}>
         <source src={srcAudio} type="audio/mp3" />
       </audio>
     </div>
